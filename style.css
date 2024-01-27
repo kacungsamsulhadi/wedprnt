@@ -1,0 +1,841 @@
+:root {
+  --pink: #000000;
+  --bg: #0a0a0a;
+  --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
+  --dark: #f5f5f5;
+  --light: #FFFFFF;
+  --textColor: #7C7C7C;   
+  --gold: #E6B637;
+  --goldhover: #CA9E2A;
+}
+
+body {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/ppBlack1.jpg);
+  background-size: cover;
+  z-index: -1;    
+  filter: brightness(0.5);
+}
+
+.hero {
+  position: relative;
+  min-height: 100vh; 
+}
+
+.hero .myName{
+  font-size: 4rem;
+  font-family: 'Pinyon Script', cursive;
+  font-weight: lighter;    
+}
+
+.hero .heroJudul{
+  font-size: 4rem;  
+  font-family: 'Pinyon Script', cursive;
+  font-weight: lighter;  
+}
+
+.hero h4 {
+  font-size: 1.6rem;
+}
+
+.hero h1,
+.hero h4,
+.hero p {
+  text-shadow: var(--shadow);
+}
+
+.hero p {
+  font-size: 1.4rem;
+}
+
+.hero a {
+  color: var(--light);
+  background-color: var(--gold);
+}
+
+.hero a:hover {
+  size: 5rem;
+  color: var(--goldhover);
+  background-color: var(--goldhover);
+  color: white;
+}
+
+.mynavbar {
+    background-color: rgba(255, 255, 255, 0.3) !important;
+    backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas{
+    height: 100vh;
+    width: 60vw;
+}
+
+.mynavbar .navbar-brand,
+.mynavbar .offcanvas-title {
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  color: var(--pink);
+  font-weight: bold;
+}
+
+.mynavbar .nav-link {
+  text-transform: uppercase;
+}
+
+.home {
+    background-image: url(img/bgg.jpg);
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -6rem;
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+}
+
+.home h2,
+.story h2,
+.galery h2,
+.gifts h2,
+.thanks h2 {
+    font-family: "Sacramento", cursive;
+    font-size: 3rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.home h3 {
+    /* font-family: "Sacramento", cursive; */
+    color: var(--bg);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;   
+    font-weight: bold;
+}
+
+.home p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.home .couple {
+  margin-top: 40px;
+}
+
+.home .couple h3 {
+  font-family: "Sacramento";
+  font-size: 2.4rem;
+  color: var(--pink);
+}
+
+.home .couple img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.home .heart {
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) translateY(80px);
+}
+
+.home .heart i {
+  margin: auto;
+  color: var(--pink);
+}
+
+.info {
+  background-color: var(--bg);
+  color: white;
+  min-height: 100vh;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+
+.info h2{
+    font-family: "Sacramento", cursive;
+    font-size: 3rem;
+    color: var(--light);
+}
+
+.info .alamat {
+  font-size: 1.1rem;
+}
+
+.info .maps {
+  border: 1px solid #999;
+  border-radius: 8px;
+}
+
+.info .description {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.info .card {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color: white !important;
+  border: 1px solid #999;
+}
+
+.info .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+} 
+
+.info .card-body {
+  font-size: 1rem;
+}
+
+.info .card-footer {
+  border-top: 1px solid #999;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.story,
+.galery,
+.rsvp,
+.gifts,
+.thanks {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  min-height: 100vh;
+}
+
+.story span,
+.galery span,
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  display-block;
+}
+
+.story h2,
+.galery h2,
+.rsvp h2 {
+  margin-top: 1rem;
+}
+
+.story p, 
+.galery p,
+.rsvp p,
+.gifts p,
+.thanks p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.timeline {
+  list-style: none;
+  padding: 1.4rem 0;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  width: 1px;
+  height: 80%;
+  background-color: #ccc;
+  left: 50%;
+}
+
+.timeline li {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.timeline li::before,
+.timeline li::after {
+  content: '';
+  display: table;
+}
+
+.timeline li::after {
+  clear: both;
+}
+
+.timeline li .timeline-image {
+  width: 160px;
+  height: 160px;
+  background-color: #ccc;
+  position: absolute;
+  left: 50%;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.timeline li .timeline-panel {
+  width: 40%;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  position: relative;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.timeline li .timeline-panel::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-top: 15px solid transparent;
+  border-left: 15px solid #ccc;
+  border-right: 0 solid #ccc;
+  border-bottom: 15px solid transparent;
+  top: 80px;
+  right: -15px;
+}
+
+.timeline li .timeline-panel::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  border-top: 14px solid transparent;
+  border-left: 14px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 14px solid transparent;
+  top: 81px;
+  right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel {
+  float: right;
+}
+
+.timeline li.timeline-inverted .timeline-panel::before {
+  border-left-width: 0;
+  border-right-width: 15px;
+  left: -15px;
+  right: auto;
+}
+
+.timeline li.timeline-inverted .timeline-panel::after {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -13px;
+  right: auto;
+}
+
+.galery {
+  background-color: #f5f5f5;
+}
+
+.rsvp {
+  background-color: var(--bg);
+}
+
+.rsvp h2{
+  font-family: "Sacramento", cursive;
+  font-size: 3rem;
+  color: var(--light);
+}
+
+.rsvp p {
+  color: white;
+}
+
+.rsvp form-label {
+  color: black;
+}
+
+.rsvp button {
+  background-color: var(--pink);
+  border: 1px solid var(--pink);
+  color: white;
+  padding: 6px 12px;
+  font-size: 1rem;
+  font-weight: 300;
+  width: 50%;
+} 
+.rsvp button:hover {
+  background-color: var(--bg);
+  border: 1px solid var(--pink);
+  color: white;
+} 
+
+.rsvp .form-floating .form-control {
+  line-height: 1.5;
+  height: 1;
+}
+.rsvp .form-floating .form-select {
+  padding-bottom: 0;
+}
+
+.thanks {
+  background-image: url(img/bgg.jpg);
+  background-size: cover;
+  color: white;
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  height: 100vh;
+}
+.thanks .container-fluid{
+  width: 100%;
+  /* backdrop-filter: blur(4px); */
+  height: 628px;
+  background-color: whitesmoke;
+  backdrop-filter: opacity(0.5);
+  border-radius: 32px;
+}
+
+.thanks p{
+  font-size: 1.5rem;
+  font-weight: 300;
+  font-family: "Sacramento", cursive;
+  color: black;
+}
+
+footer {
+  padding: 2rem;
+  background-color: var(--pink);
+  color: white;
+}
+
+footer a {
+  color: var(--light);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer li {
+  list-style: none;
+  display: inline;
+  margin: 0.5rem;
+}
+
+.audio-icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  font-size: 4rem;
+  position: fixed;
+  bottom: 2.5rem;
+  right: 2rem;
+  cursor: pointer;
+  color: white;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 3s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+.block {
+  font-size: 0.8rem;
+}
+
+.iconsos {
+  font-size: 0.9rem;
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  } 
+}
+
+/* media query */
+/* 4k */
+@media (max-width: 2697px) {
+  html {
+    font-size: 100%;
+  }
+  .img1 {
+    width: 30%;
+    margin: 0px 0px 10px;
+  }
+  .simply-countdown > .simply-section {
+    width: 100px;
+    height: 60px;
+    padding: 30px;
+    margin: 5px;
+    background-color: var(--bg);
+  }
+}
+/* lepi */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3.8rem;
+    margin-bottom: 5px;
+  }
+  .hero h4 {
+    font-size: 1.5rem;
+  }
+  .hero a {
+    font-size: 1.3rem;
+  }
+  .hero a:hover {
+    font-size: 1.3rem;
+  }
+  .img1 {
+    width: 20%;
+    margin-top: 5px;
+  }
+  .simply-countdown > .simply-section {
+    width: 60px;
+    height: 30px;
+    padding: 25px;
+    margin: 5px;
+    background-color: var(--bg);
+  }
+  /* .home .heart {
+  display: none;
+  } */
+  .timeline::before {
+    left: 60px;
+  }
+  .timeline li .timeline-image {
+  left: 15px;
+  margin-left: 45px;
+  top: 16px;
+  }
+  .timeline li .timeline-panel {
+    width: calc(100% - 200px);
+    float: right;
+  }
+  .timeline li .timeline-panel::before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+  }
+  .timeline li .timeline-panel::after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+  }
+  /* .timeline li .timeline-image {
+    width: 130px;
+    height: 130px;
+  } */
+  .hero::before {
+    background-size: cover;
+    backdrop-filter: blur(2px);
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  .hero h4 {
+    font-size: 1.4rem;
+  }
+  .hero a {
+    font-size: 1.2rem;
+    margin-top: 5px;
+  }
+  .hero a:hover {
+    font-size: 1.2rem;
+  }
+  .img1 {
+    width: 20%;
+    margin-top: 5px;
+  }
+  .home .heart {
+  display: none;
+  }
+  .simply-countdown > .simply-section {
+    width: 90px;
+    height: 50px;
+    padding: 30px;
+    margin: 5px;
+    background-color: var(--bg);
+  }
+  .mynavbar .nav-link {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+  .hero::before {
+    background-size: cover;
+    backdrop-filter: blur(2px);
+  }
+  .audio-icon-wrapper {
+    font-size: 3rem;
+    bottom: 1.3rem;
+    right: 1.3rem;
+  }
+}
+
+/* mobile */
+@media (max-width: 581px) {
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .hero h4 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .hero a {
+    font-size: 1.1rem;
+    margin-top: 20px;
+  }
+  .hero a:hover {
+    font-size: 1.1rem;
+  }
+  .home .heart {
+    display: none;
+  }
+  .img1 {
+    width: 40%;
+    margin-top: 10px;
+  }
+  .simply-countdown > .simply-section {
+    width: 60px;
+    height: 20px;
+    padding: 30px;
+    margin: 4px;
+    background-color: var(--bg);
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+  .timeline li .timeline-panel {
+    width: 65%;
+    transform: translateX(-20px);
+  }
+  .timeline li .timeline-image {
+    width: 80px;
+    height: 80px;
+  }
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+  .hero::before {
+    background-size: cover;
+    backdrop-filter: blur(10px);
+  }
+  .audio-icon-wrapper {
+    font-size: 2.5rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+/* mobile l */
+@media (max-width: 425px) {
+  .hero .heroJudul {
+    font-size: 3rem !important;
+    margin-bottom: 5px;    
+  }
+  .hero .myName {
+    font-size: 5rem;
+    margin-bottom: 5px;
+  }
+  .hero h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+  .hero a {
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+  .hero a:hover {
+    font-size: 1rem;
+  }
+  .img1 {
+    width: 50%;
+    margin-top: 10px;
+  }
+  .home .heart {
+    display: none;
+  }
+  .simply-countdown > .simply-section {
+    width: 10px;
+    height: 10px;
+    padding: 25px;
+    margin: 5px;
+    font-size: 1rem;
+    background-color: var(--bg);
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+  .timeline li .timeline-panel {
+    width: 60%;
+    transform: translateX(-20px);
+  }
+  .timeline li .timeline-image {
+    width: 65px;
+    height: 65px;
+  }
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+  .hero::before {
+    background-size: cover;
+  }
+  .audio-icon-wrapper {
+    font-size: 2.5rem;
+    bottom: 0.8rem;
+    right: 0.8rem;
+  }
+}
+
+/* mobile s */
+@media (max-width: 375px) {  
+  .hero .heroJudul {
+    font-size: 2rem !important;
+    margin-bottom: 30px;
+    /* margin-top: -150px; */
+  }  
+  .hero .myName {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    /* margin-bottom: 5px; */
+  }
+  .hero h4 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;  
+  }
+  .hero a {
+    font-size: 0.8rem;
+  }
+  .hero a:hover {
+    font-size: 0.8rem;
+  }
+  .img1 {
+    width: 60%;
+    margin-top: 10px;
+  }
+  .home .heart {
+    display: none;
+  }
+  .simply-countdown > .simply-section {
+    width: 10px;
+    height: 10px;
+    padding: 25px;
+    margin: 5px;
+    font-size: 1rem;
+    background-color: var(--bg);    
+  }
+  .sticky-top {
+    overflow: hidden;
+  }
+  .home {
+    margin-top: -4.5rem;
+    background-position: center;    
+  }
+  .home h2,
+  .info h2,
+  .story h2,
+  .galery h2,
+  .rsvp h2,
+  .gifts h2 {
+    margin-top: -30px;
+  }
+  .rsvp h2{
+    font-size: 2.2rem;
+  }
+  .home h2,
+  .info h2,
+  .story h2,
+  .galery h2,
+  .gifts h2{
+    font-size: 2.5rem;
+  }
+  .home h3 {
+    font-size: 1.1rem;
+    font-weight: lighter;
+  }
+  .home p {
+    font-size: 1rem;
+  }
+  .home .couple {
+    margin-top: 20px;
+  }
+  
+  .home .couple h3 {
+    font-family: "Sacramento";
+    font-size: 2.4rem;
+    color: var(--pink);
+    font-weight: bold;
+    margin-bottom: -4px;
+  }
+  .timeline {    
+    padding: 0.5rem 0;
+    margin-bottom: -20rem;
+  }
+  .timeline li .timeline-panel {
+    width: 60%;
+    transform: translateX(-20px);
+  }
+  .timeline li .timeline-image {
+    width: 65px;
+    height: 65px;
+  }
+  .timeline li .timeline-panel::before {
+    top: 30px;
+  }
+  .timeline li .timeline-panel::after {
+    top: 31px;
+  }
+  .hero::before {
+    background-size: cover;
+  }
+  .audio-icon-wrapper {
+    font-size: 2.5rem;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+  .mynavbar .navbar-brand,
+  .mynavbar .offcanvas-title{
+  font-family: "Sacramento", cursive;
+  font-size: 2rem;
+  } 
+  .mynavbar .offcanvas-body .nav-link {
+    font-size: 1rem;
+  }
+  .corausel{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-inline-start: 5rem;
+  }
+}
